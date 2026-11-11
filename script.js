@@ -10,7 +10,7 @@ const CONTACT_EMAIL = "gamhablemosdesuicidio@gmail.com";
 
 // Mensaje inicial de WhatsApp
 const WHATSAPP_MESSAGE =
-  "¡Hola! Me interesa participar en los Grupos de Apoyo Mutuo del CESFAM Peñaflor. ¿Me podrían entregar más información?";
+  "¡Hola! Soy usuario de cesfam Peñaflor, me interesa participar en los Grupos de Apoyo Mutuo. ¿Me podrían entregar más información?";
 
 
 // ============================================
@@ -40,7 +40,7 @@ if (emailButton) {
 
   const body =
     "¡Hola!\n\n" +
-    "Me interesa participar en los Grupos de Apoyo Mutuo del CESFAM Peñaflor. ¿Me podrían entregar más información? \n\n" +
+    "Soy usuario de cesfam Peñaflor, me interesa participar en los Grupos de Apoyo Mutuo. ¿Me podrían entregar más información? \n\n" +
     "¡Muchas gracias!";
 
   emailButton.href =
