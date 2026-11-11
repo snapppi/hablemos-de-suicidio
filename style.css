@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
+
+:root {
+  --teal: #176b72;
+  --teal-dark: #10545b;
+  --mint: #eaf4f2;
+  --ink: #203438;
+  --muted: #607477;
+  --line: #dce8e6;
+  --white: #ffffff;
+  --warm: #fff8ed;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 28px 16px;
+  color: var(--ink);
+  background: linear-gradient(180deg, #edf5f4 0%, #f7faf9 42%, #f3f7f6 100%);
+  font-family: "DM Sans", Arial, sans-serif;
+}
+
+.page {
+  width: 100%;
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 34px clamp(20px, 5vw, 46px) 24px;
+  background: var(--white);
+  border: 1px solid rgba(23, 107, 114, .09);
+  border-radius: 26px;
+  box-shadow: 0 18px 55px rgba(28, 70, 73, .09);
+}
+
+.brand { text-align: center; }
+
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 62px;
+  height: 62px;
+  margin: 0 auto 13px;
+  border-radius: 21px;
+  color: var(--teal);
+  background: var(--mint);
+}
+
+.brand-mark__hands {
+  font-family: Arial, sans-serif;
+  font-size: 39px;
+  line-height: 1;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: var(--teal);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .16em;
+}
+
+h1, h2 { font-family: "Manrope", "DM Sans", Arial, sans-serif; }
+
+h1 {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(2rem, 7vw, 2.65rem);
+  line-height: 1.12;
+  letter-spacing: -.055em;
+}
+
+h1 span { color: var(--teal); }
+
+.subtitle {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: .98rem;
+  font-weight: 600;
+}
+
+.intro {
+  margin: 29px 0 27px;
+  padding: 22px 20px;
+  text-align: center;
+  background: #f5f9f8;
+  border: 1px solid #e8f0ee;
+  border-radius: 18px;
+}
+
+.intro h2 {
+  margin: 0 0 9px;
+  color: var(--teal-dark);
+  font-size: 1.16rem;
+  line-height: 1.4;
+}
+
+.intro p, .about p, .urgent p {
+  margin: 0;
+  color: var(--muted);
+  font-size: .94rem;
+  line-height: 1.65;
+}
+
+.contact h2, .about h2, .urgent h2 {
+  margin: 0 0 14px;
+  color: var(--ink);
+  font-size: 1.12rem;
+}
+
+.contact { margin-bottom: 30px; }
+
+.contact-button {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 76px;
+  margin-top: 12px;
+  padding: 14px 17px;
+  color: var(--ink);
+  text-decoration: none;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+
+.contact-button:hover, .contact-button:focus-visible {
+  transform: translateY(-2px);
+  border-color: #a9ceca;
+  box-shadow: 0 8px 22px rgba(23, 107, 114, .10);
+  outline: none;
+}
+
+.button-icon {
+  display: grid;
+  flex: 0 0 43px;
+  place-items: center;
+  width: 43px;
+  height: 43px;
+  color: var(--teal);
+  background: var(--mint);
+  border-radius: 13px;
+}
+
+.button-icon svg { width: 23px; height: 23px; fill: currentColor; }
+.contact-button span:nth-child(2) { display: grid; gap: 4px; flex: 1; }
+.contact-button strong { font-size: .96rem; }
+.contact-button small { color: var(--muted); font-size: .79rem; }
+.button-arrow { color: var(--teal); font-size: 1.8rem; line-height: 1; }
+
+.about {
+  padding: 21px 0;
+  border-top: 1px solid var(--line);
+}
+
+.about p + p { margin-top: 12px; }
+
+.note {
+  padding: 12px 14px;
+  color: #53696c !important;
+  background: #f5f8f7;
+  border-left: 3px solid #8ab7b2;
+  border-radius: 5px 12px 12px 5px;
+  font-size: .86rem !important;
+}
+
+.urgent {
+  margin: 8px 0 23px;
+  padding: 17px 18px;
+  background: var(--warm);
+  border: 1px solid #f1e4cc;
+  border-radius: 15px;
+}
+
+.urgent h2 { color: #76552a; font-size: 1rem; }
+.urgent p { color: #705f48; font-size: .84rem; }
+
+footer {
+  padding-top: 17px;
+  text-align: center;
+  border-top: 1px solid var(--line);
+}
+
+footer p {
+  margin: 4px 0;
+  color: #829294;
+  font-size: .75rem;
+}
+
+@media (max-width: 420px) {
+  body { padding: 12px 9px; }
+  .page { padding: 27px 19px 21px; border-radius: 21px; }
+  .intro { padding: 19px 16px; }
+  .contact-button { gap: 11px; padding: 12px; }
+}
