@@ -8,40 +8,40 @@
 const WHATSAPP_NUMBER = "56946683522";
 const CONTACT_EMAIL = "gamhablemosdesuicidio@gmail.com";
 
-// Mensaje inicial para WhatsApp
+// Mensaje inicial de WhatsApp
 const WHATSAPP_MESSAGE =
   "Hola, quisiera recibir información sobre el proyecto Hablemos de Suicidio y los Grupos de Apoyo Mutuo (GAM) del CESFAM Peñaflor.";
 
 
 // ============================================
-// CONFIGURACIÓN DEL BOTÓN DE WHATSAPP
+// BOTÓN DE WHATSAPP
 // ============================================
 
-const whatsappButton = document.getElementById("whatsappButton");
+const whatsappButton = document.getElementById("whatsapp-link");
 
 if (whatsappButton) {
-  const whatsappUrl =
+  const whatsappURL =
     `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
 
-  whatsappButton.href = whatsappUrl;
+  whatsappButton.href = whatsappURL;
   whatsappButton.target = "_blank";
   whatsappButton.rel = "noopener noreferrer";
 }
 
 
 // ============================================
-// CONFIGURACIÓN DEL BOTÓN DE CORREO
+// BOTÓN DE CORREO ELECTRÓNICO
 // ============================================
 
-const emailButton = document.getElementById("emailButton");
+const emailButton = document.getElementById("email-link");
 
 if (emailButton) {
-  const emailSubject =
-    "Consulta sobre Hablemos de Suicidio – GAM";
+  const subject = "Consulta sobre Hablemos de Suicidio - GAM";
 
-  const emailBody =
+  const body =
     "Hola, quisiera recibir más información sobre el proyecto Hablemos de Suicidio y los Grupos de Apoyo Mutuo (GAM) del CESFAM Peñaflor.";
 
   emailButton.href =
-    `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+    `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
+
