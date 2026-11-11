@@ -10,7 +10,7 @@ const CONTACT_EMAIL = "gamhablemosdesuicidio@gmail.com";
 
 // Mensaje inicial de WhatsApp
 const WHATSAPP_MESSAGE =
-  "Hola, quisiera recibir información sobre el proyecto Hablemos de Suicidio y los Grupos de Apoyo Mutuo (GAM) del CESFAM Peñaflor.";
+  "¡Hola! Me interesa participar en los Grupos de Apoyo Mutuo del CESFAM Peñaflor. ¿Me podrían entregar más información?";
 
 
 // ============================================
@@ -36,10 +36,12 @@ if (whatsappButton) {
 const emailButton = document.getElementById("email-link");
 
 if (emailButton) {
-  const subject = "Consulta sobre Hablemos de Suicidio - GAM";
+  const subject = "Información sobre los Grupos de Apoyo Mutuo";
 
   const body =
-    "Hola, quisiera recibir más información sobre el proyecto Hablemos de Suicidio y los Grupos de Apoyo Mutuo (GAM) del CESFAM Peñaflor.";
+    "¡Hola!\n\n" +
+    "Me interesa participar en los Grupos de Apoyo Mutuo del CESFAM Peñaflor. ¿Me podrían entregar más información? \n\n" +
+    "¡Muchas gracias!";
 
   emailButton.href =
     `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
