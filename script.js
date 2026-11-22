@@ -5,7 +5,7 @@
 // ============================================
 
 // Datos de contacto institucionales
-const WHATSAPP_NUMBER = "56946683522";
+const WHATSAPP_NUMBER = "56937508808";
 const CONTACT_EMAIL = "gamhablemosdesuicidio@gmail.com";
 
 // Mensaje inicial de WhatsApp
